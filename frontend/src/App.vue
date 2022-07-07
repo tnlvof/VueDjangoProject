@@ -5,7 +5,7 @@
       app
       clipped
     >
-    <v-list
+       <v-list
         dense
         nav
       >
@@ -36,23 +36,22 @@
     </v-main>
 
     <v-footer app>
-      <span>$copy; 2022</span>
+      <span>&copy; 2022</span>
     </v-footer>
-
   </v-app>
 </template>
 
 <script>
 import HelloWorld from "@/components/HelloWorld";
-
-  export default {
-    components: { HelloWorld },
-    data: () => ({ drawer: null,
+export default {
+  components: { HelloWorld },
+  data: () => ({
+    drawer: null,
     items: [
-          { title: 'Dashboard', icon: 'mdi-view-dashboard' },
-          { title: 'Photos', icon: 'mdi-image' },
-          { title: 'About', icon: 'mdi-help-box' },
-        ],
-    }),
-  }
+      {title: 'Dashboard', icon: 'mdi-view-dashboard'},
+      {title: 'Photos', icon: 'mdi-image'},
+      {title: 'About', icon: 'mdi-help-box'},
+    ],
+  }),
+}
 </script>
